@@ -12,6 +12,11 @@ import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import ListRenderExample from './components/ListRenderExample';
+import StyleSheet from './components/StyleSheet';
+import Inline from './components/Inline';
+import './appStyles.css';
+import styles from './appStyles.module.css';
+import Form from './components/Form';
 // function App() {
 //   return (
 //     <div className="App">
@@ -35,8 +40,13 @@ import ListRenderExample from './components/ListRenderExample';
 // }
 function App(){
   return(
-  
+      
     <div className="App">
+      <Form></Form>
+      <h1 className='error'>error</h1>
+      <h1 className={styles.success}>success</h1>
+      <StyleSheet primary={false} ></StyleSheet>
+      <Inline></Inline>
       <Greet name='allstate' shortName="ASLP">
         <p>I love AllSTATE!!</p></Greet>
     <Welcome name='Baglore' shortName='office'>
