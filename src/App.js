@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Greet from './components/Greet';
-import React,{Component} from 'react';
+import React from 'react';
 import Welcome from './Welcome'
 import Hello from './components/Hello';
 import Message from './components/Message';
@@ -17,6 +17,8 @@ import Inline from './components/Inline';
 import './appStyles.css';
 import styles from './appStyles.module.css';
 import Form from './components/Form';
+import LifeCycleA from './components/LifeCycleA';
+import UpdateLifeCycleA from './components/UpdateLifeCycleA';
 // function App() {
 //   return (
 //     <div className="App">
@@ -62,6 +64,8 @@ function App(){
       <ParentComponent></ParentComponent>
       <UserGreeting></UserGreeting>
       <ListRenderExample></ListRenderExample>
+      <LifeCycleA></LifeCycleA>
+      <UpdateLifeCycleA></UpdateLifeCycleA>
     </div>
   );
 }
